@@ -1,0 +1,1 @@
+g++ cube.cc -lglut -lGL -o cube

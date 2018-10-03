@@ -1,0 +1,1 @@
+g++ glmain.cc -lglut -lGL -o glmain
