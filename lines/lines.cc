@@ -28,19 +28,8 @@ void init(void) {
 void drawLines(void) {
     glClear(GL_COLOR_BUFFER_BIT);  
     glColor3f(0.0,0.4,0.2); 
-    glPointSize(3.0);  
-
-    /*
-    glBegin(GL_LINES);
-    //glVertex2d(180, 15);
-    //glVertex2d(10, 145);
-
-    glVertex3f(0.5, 0.15, 0.5);
-    glVertex3f(0.2, 0.66, 0.5);
-
-
-    glEnd();
-*/
+    glPointSize(3.0);
+    glLineWidth(1.0);
 
     //glBegin(GL_TRIANGLE_FAN);
     glBegin(GL_LINES);
@@ -64,6 +53,26 @@ glVertex3f( 0.2f, -1.5f, -6.0f);    // F
 glVertex3f( 1.0f, -0.5f, -4.0f);    // G
 
 glEnd();
+
+glColor3f(0.5,0.0,0.2); 
+glPointSize(4.0);
+glLineWidth(4.0);
+
+glBegin(GL_LINES);
+
+
+glVertex3f(-1.5f,  0.2f, -6.0f);    // D
+glVertex3f(-1.8f, -1.0f, -4.0f);    // E
+
+glVertex3f(-1.8f, -1.0f, -4.0f);    // E
+glVertex3f( 0.4f, -1.5f, -.0f);    // F
+
+glVertex3f( 0.4f, -1.5f, -6.5f);    // F
+glVertex3f( 1.0f, -0.5f, -4.5f);    // G
+
+glEnd();
+
+
     glFlush();
 } 
 
