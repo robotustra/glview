@@ -30,6 +30,7 @@ void drawLines(void) {
     glColor3f(0.0,0.4,0.2); 
     glPointSize(3.0);
     glLineWidth(1.0);
+    glEnable(GL_LINE_SMOOTH);
 
     //glBegin(GL_TRIANGLE_FAN);
     glBegin(GL_LINES);
